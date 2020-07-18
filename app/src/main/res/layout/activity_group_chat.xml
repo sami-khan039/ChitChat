@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupChatActivity">
+
+    <include android:id="@+id/GroupChatBarLayout"
+        layout="@layout/app_bar_layout"
+        ></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/GMSV"
+        android:layout_above="@+id/GMSLL"
+        android:layout_below="@+id/GroupChatBarLayout"
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/GMLL"
+    android:orientation="vertical">
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/GroupMessageView"
+     android:layout_marginStart="2dp"
+     android:layout_marginEnd="2dp"
+     android:layout_marginTop="10dp"
+     android:layout_marginBottom="60dp"
+     android:textAllCaps="false"
+     android:textColor="@android:color/background_dark"
+     android:textSize="20sp"
+     android:padding="10dp"/>
+
+</LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:id="@+id/GMSLL"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+       >
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/GroupTextMessage"
+            android:layout_weight="0.8"
+            android:padding="12dp"
+            android:background="@drawable/inputs"
+            android:hint="Enter you Message Here "
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"/>
+        <ImageButton
+            android:layout_weight="0.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send_message"
+            android:id="@+id/IBTNsendGroupMessage"/>
+
+    </LinearLayout>
+</RelativeLayout>

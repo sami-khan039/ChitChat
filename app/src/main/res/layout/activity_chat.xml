@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <include
+        android:id="@+id/ChatbarLayout"
+        layout="@layout/app_bar_layout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChatMessages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/LL"
+        android:layout_below="@+id/ChatbarLayout" />
+
+
+    <LinearLayout
+        android:id="@+id/LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+       >
+    <EditText
+        android:layout_weight="0.7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MessageInput"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:padding="7dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/inputs"
+        android:hint="Message part Comes here "/>
+        <ImageButton
+            android:layout_weight="0.2"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSendMessage"
+            android:src="@drawable/send_message"/>
+
+    </LinearLayout>
+</RelativeLayout>

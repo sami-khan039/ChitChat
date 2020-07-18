@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Find Users"
+        app:showAsAction="never"
+        android:id="@+id/FindUsersActivityLink"
+        >   </item>
+    <item android:title="Create Group"
+        app:showAsAction="never"
+        android:id="@+id/CreateGroupActivityLink"
+        >   </item>
+    <item android:title="Settings"
+
+        app:showAsAction="never"
+        android:id="@+id/SettingsActivityLink"
+        > </item>
+    <item android:title="Logout"
+        app:showAsAction="never"
+        android:id="@+id/LogoutLink"
+        > </item>
+</menu>

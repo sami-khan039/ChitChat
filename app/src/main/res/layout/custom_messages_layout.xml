@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/profile_image"
+        android:id="@+id/PP"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/OtherUserMessage"
+        android:text="Other User Send This "
+        android:layout_toEndOf="@+id/PP"
+        android:textSize="18dp"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:background="@drawable/other_user_messages_layout"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SenderMessage"
+        android:text="my text"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="@id/OtherUserMessage"
+        android:background="@drawable/sender_messages_layout"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"/>
+
+
+
+</RelativeLayout>
